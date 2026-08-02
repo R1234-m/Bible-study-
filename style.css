@@ -61,28 +61,6 @@ body {
   position: relative;
 }
 
-.menu-icon {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid var(--border);
-  border-radius: 0.7rem;
-  padding: 0.6rem;
-  cursor: pointer;
-}
-
-.menu-icon span {
-  display: block;
-  width: 1.2rem;
-  height: 2px;
-  background: var(--text);
-  border-radius: 999px;
-}
-
 .hero__content {
   max-width: 760px;
   text-align: center;
