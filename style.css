@@ -58,6 +58,29 @@ body {
   padding: 5rem 1.5rem 3rem;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  background: var(--text);
+  border-radius: 999px;
 }
 
 .hero__content {
@@ -129,6 +152,45 @@ h1 {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
   padding: 1.4rem;
   backdrop-filter: blur(10px);
+}
+
+.weeks-section {
+  margin-bottom: 1.2rem;
+}
+
+.weeks-header {
+  margin-bottom: 1rem;
+}
+
+.weeks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.week-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.week-number {
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.week-verse {
+  font-weight: 600;
+  margin-bottom: 0.55rem;
+  color: #dceeff;
+}
+
+.week-item {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.45rem;
 }
 
 .prayer-card {
@@ -222,6 +284,10 @@ h1 {
 
 @media (max-width: 768px) {
   .session-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .weeks-grid {
     grid-template-columns: 1fr;
   }
 
